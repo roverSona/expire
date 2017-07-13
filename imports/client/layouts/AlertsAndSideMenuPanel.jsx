@@ -3,14 +3,14 @@ import React from 'react';
 import SideBar from '../components/sidebar.jsx';
 import KCQAlertSummary from '../components/KCQAlertSummary.jsx';
 
-const AlertsAndSideMenuPanel = () => 
-	<div className="row">
-		<div className="col-md-3">
-			<SideBar/>
-		</div>
-		<div className="col-md-9">
-			<KCQAlertSummary/>
-		</div>
-	</div>;
+const AlertsAndSideMenuPanel = () =>
+		<main>
+				<div className="container-fluid">
+					<aside className="sidebar">
+						<SideBar/>
+					</aside>
+					<KCQAlertSummary/>
+				</div>
+		</main>;
 
 export default AlertsAndSideMenuPanel

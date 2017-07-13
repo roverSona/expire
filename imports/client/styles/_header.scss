@@ -1,0 +1,48 @@
+/* Header css */
+
+header {
+  padding:15px 9px 10px;
+  box-shadow:0 2px 5px rgba(174, 174, 174, 0.5);
+  -webkit-box-shadow:0 2px 5px rgba(174, 174, 174, 0.5);
+}
+
+.form-wrap{
+	
+	label {
+	  line-height: 1;
+	  margin: 0;
+	  vertical-align: middle;
+	  color:#808080;
+	}
+	.select-style {
+	  margin-left: 13px;
+	  vertical-align: middle;
+	  
+		.form-control{
+		  background: #fcfcfc none repeat scroll 0 0;
+		  border-color: #c5ccd3;
+		  @include border-radius(3px);
+		  box-shadow: none;
+		  height: 30px;
+		  line-height: 1;
+		  padding: 0 11px;
+		  width: 180px;
+		}
+	}
+}
+
+.user-box {
+  float: left;
+  margin-left:21px;
+	.user-icon{
+	  border-radius: 100%;
+	  overflow: hidden;
+	  vertical-align: middle;
+	  margin-right:5px;
+	  margin-top:-3px;
+	}
+	.user-name{margin-right:4px;}
+
+}
+
+/* Header css */

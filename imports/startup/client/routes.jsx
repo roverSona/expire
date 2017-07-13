@@ -8,7 +8,7 @@
 import { Meteor } from 'meteor/meteor';
 import React,{Component} from 'react';
 import { BrowserRouter} from 'react-router-dom';
-import ReactDom,{ render} from 'react-dom';
+import ReactDom from 'react-dom';
 
 import MainLayout from '/imports/client/layouts/MainLayout.jsx';
 export default class Routes extends Component{

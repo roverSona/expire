@@ -1,0 +1,179 @@
+/* Sidebar css */
+
+aside.sidebar {
+  background: #4886af;
+  height:calc(100% - 61px);
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 61px;
+  width: 230px;
+  padding:18px 0px 8px;
+  text-align:center;
+  
+  .sub-head {
+	  color: #fff;
+		display: block;
+		font-weight: 600;
+		text-align: center;
+	}
+   .primary-btn {
+	  background: #fff none repeat scroll 0 0;
+	  color: #4886af;
+	  font-size: 12px;
+	  font-weight: 600;
+	  max-width: 217px;
+	  text-transform: uppercase;
+	  width: 100%;
+	}
+	.accordion {
+	  min-height: calc(100vh - 194px);
+	}
+	
+
+}
+.search-bar {
+  padding: 10px 14px 15px;
+  
+  .form-wrap{
+	position:relative;
+	.form-control{
+		  background:rgba(42,100,138,0.77);
+		  border: 0 none;
+		  color: #fff;
+		  font-size: 12px;
+		  height: 30px;
+		  padding:0px 30px 0px 11px;
+		  
+		    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  color: rgba(255,255,255,0.5);
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  color: rgba(255,255,255,0.5);
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  color: rgba(255,255,255,0.5);
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  color: rgba(255,255,255,0.5);
+			}
+
+
+		}
+	.icon-search:before {
+		  bottom: 0;
+		  color: #f0f0f0;
+		  font-size: 14px;
+		  height: 13px;
+		  margin: auto;
+		  position: absolute;
+		  right: 8px;
+		  top: 0;
+		}
+	}
+
+
+}
+.links{
+	  color: #fff;
+	  font-weight: 700;
+	  list-style: outside none none;
+	  margin: 0;
+	  padding: 0;
+	  text-align:left;
+
+	 li {
+	  border-bottom: 1px solid #6d9ebf;
+	  line-height: 1;
+	  position:relative;
+	  label {
+		  font-size: 12px;
+		  font-weight: 600;
+		  line-height: 1;
+		  margin: 0;
+		  vertical-align: top;
+		  padding:13px 25px 15px 14px;
+		  display:block;
+		  
+			  input[type="checkbox"] {
+				  margin: 0;
+				  vertical-align: top;
+				  display:none;
+				}
+		  
+			&:after{
+			font-family: 'icomoon' !important;
+			content:"\e900";
+			display: inline-block;
+			font-family: "icomoon" !important;
+			font-size: 6px;
+			position: absolute;
+			right: 17px;
+			top: 18px;
+			@include transform(rotate(-90deg));
+			vertical-align: top;
+			}
+			&.active{
+		      background: $primary-color;
+				
+				&:after{@include transform(rotate(0deg));}
+				
+			  }
+			&.active .checkbox-style{
+				background: #fff none repeat scroll 0 0;
+				border: 1px solid #fff;
+				color: #4886af;
+				display: inline-block;
+				font-size: 16px;
+				font-style: normal;
+				height: 15px;
+				line-height: 13px;
+				margin-right: 7px;
+				margin-top: -2px;
+				text-align: center;
+				vertical-align: top;
+				width: 15px;
+				&:after{
+				content:"\e903";
+				display: inline-block;
+				font-family: "icomoon" !important;
+				margin-left: -2px;
+				}
+			}
+			
+		}
+		&:first-child{border-top: 1px solid #6d9ebf;}
+		
+	}
+}
+.submenu{
+	display:none;
+	background: $primary-color;
+		li{
+			border:0px;
+			padding:0px 10px 0px 21px;
+			
+			&:after{content:"";}
+						
+			label {
+			 padding:7px 25px 7px 14px;
+			 
+			 &:after{display:none;}
+			}
+			
+			&:first-child{
+			
+				border:0px;
+				
+					label{
+						padding-top:13px;
+						}
+			}
+			&:last-child{
+					label{
+						padding-bottom:13px;
+						}
+			}
+		}
+	}
+/* Sidebar css */

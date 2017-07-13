@@ -7,17 +7,12 @@ import Footer from './Footer.jsx';
 export default class MainLayout extends Component {
 	render() {
 		return (
-				<div className="container-fluid">
+				<div>
 					<Header/>
-					<div style={{'marginTop':'51px'}}>
-						<Investigator/>
-					</div>
-					<Footer/>
+					<Investigator/>
+					{/*<Footer/>*/}
 				</div>
 			)
 
 	}
 }
-
-
-
