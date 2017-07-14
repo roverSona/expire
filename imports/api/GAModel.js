@@ -1,3 +1,4 @@
-import {Mongo} from 'meteor/mongo';
+import { QuaruleCollection ,GAType} from '/imports/api/common/constants'
 
-export const Quarule = new Mongo.Collection('quarule');
+const GAs = QuaruleCollection.find({type:'Run'},{ fields: {GAType:1}}).fetch();
+export { GAs }

@@ -1,6 +1,6 @@
 import React ,{ Component } from 'react';
 import AccountsUIWrapper from './AccountsUIWrapper.jsx';
-//import { Navbar ,NavItem,MenuItem,Nav,NavDropdown} from 'react-bootstrap';
+import OrganizationFilter from '../components/headerViews/OrganisationFilter.jsx'
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default class Header extends Component {
@@ -13,21 +13,7 @@ export default class Header extends Component {
 					<a className="site-logo" href="#"><img src="images/logo.png" alt="site logo" /></a>
 					{/* site logo */}
 					<div className="pull-right">
-						{/* organisation filter */}
-						<form className="organisation-search pull-left">
-							<div className="form-wrap">
-								<label>Filter by</label>
-								<div className="select-style">
-									<select className="form-control">
-										<option>Select Organisation</option>
-										<option>Organisation1</option>
-										<option>Organisation2</option>
-										<option>Organisation3</option>
-									</select>
-								</div>
-							</div>
-						</form>
-						{/* organisation filter */}
+						<OrganizationFilter/>
 						{/* user box */}
 						<div className="user-box">
 							<figure className="user-icon">
